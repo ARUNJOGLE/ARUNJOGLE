@@ -1,0 +1,1 @@
+alert("𝐀𝐑𝐔𝐍𝐉𝐎𝐆𝐋𝐄 welcomes you!\nToday's Hit\nThe bitter past, more welcome is the sweet! by William Shakspeare")

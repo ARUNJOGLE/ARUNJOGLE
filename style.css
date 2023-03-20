@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    user-select: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+li, a, button,h1{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6e6e6e;
+    text-decoration: none;
+}
+
+header{
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 30px 10%;
+    box-shadow: 0 0 14px #505050;
+    /* backdrop-filter:blur(10px); */
+    /* box-shadow: 0 0 0 1px #ffb900; */
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    position: relative;
+    padding: 0 10px;
+}
+
+.nav_links li a:hover{
+    color: #ffffff;
+}
+
+button{
+    padding: 9px 25px;
+    color: #000000;
+    background-color: rgba(255, 185, 0, 0.8);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(255, 185, 0, 1);
+}
+
+.nav_links li a:after{
+    content: "";
+    position: absolute;
+    background-color: #ffb900;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav_links li a:hover::after{
+    width: 100%;
+}
+
+.logo{
+    color: #ffffff;
+    user-select: none;
+    font-size: 70px;
+    text-shadow: 0 0 5px black;
+    animation: logoAnimation 1s linear 2s infinite alternate;
+}
+
+/* animation section */
+
+@keyframes logoAnimation{
+    from{text-shadow: 0 0 5px rgba(0, 0, 0, 0.351);}
+    to{text-shadow: 0 0 10px #ffb900;}
+}
+
+/* content div */
+.logo img{
+        height: 120px;
+        border-radius: 50%;
+        width: 120px;
+        border:1px solid #ffb900;
+        box-shadow: 0px 0px 20px 5px #000000;
+        animation: animateLogo 5s linear 1;
+}
+
+
+@keyframes animateLogo{
+    from{rotate: 0deg;}
+    to{rotate: 360deg;}
+}
+
+
+
+
+h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 50px;
+    text-shadow: 0 0 4px #000000;
+    /* animation: animate1 2s linear 5s 1; */
+}
+
+/* @keyframes animate1{
+    from{text-shadow: none;}
+    to{text-shadow: 0 0 5px #ffffff;}
+} */
+.anime{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding-left: 70%;
+    text-shadow: 0px 1px 5px #000000;
+    animation: animate 5s linear 1;
+}
+
+@keyframes animate{
+    from{padding-left:30%;
+        text-shadow: 0px 100px 5px #000000;
+        }
+    to{padding-left: 70%;
+        text-shadow: 0px 1px 5px #000000;
+        }
+}
+
+.container{
+    margin-top: 200px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:100px;
+}
+
+.footer a:hover{
+    color: #ffffff;
+    text-shadow: 0 0 2px #ffb900;
+}
